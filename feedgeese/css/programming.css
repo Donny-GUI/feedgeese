@@ -1,0 +1,417 @@
+@keyframes gradientColorChange {
+    0% {
+      background-color: black;
+    }
+    3% {
+      background-color: #160000;
+    }
+    6% {
+      background-color: #1c0000;
+    }
+    9% {
+      background-color: #230000;
+    }
+    12% {
+      background-color: #290000;
+    }
+    15% {
+      background-color: #2f0000;
+    }
+    18% {
+      background-color: #360000;
+    }
+    21% {
+      background-color: #3c0000;
+    }
+    24% {
+      background-color: #430000;
+    }
+    27% {
+      background-color: #490000;
+    }
+    30% {
+      background-color: #500000;
+    }
+    33% {
+      background-color: #560000;
+    }
+    36% {
+      background-color: #5d0000;
+    }
+    39% {
+      background-color: #630000;
+    }
+    42% {
+      background-color: #6a0000;
+    }
+    45% {
+      background-color: #700000;
+    }
+    48% {
+      background-color: #770000;
+    }
+    51% {
+      background-color: #7d0000;
+    }
+    54% {
+      background-color: #840000;
+    }
+    57% {
+      background-color: #8a0000;
+    }
+    60% {
+      background-color: #910000;
+    }
+    63% {
+      background-color: #970000;
+    }
+     66% {
+      background-color: #9e0000;
+    }
+    69% {
+      background-color: #a40000;
+    }
+    72% {
+      background-color: #ab0000;
+    }
+    75% {
+      background-color: #b10000;
+    }
+    78% {
+      background-color: #b80000;
+    }
+    81% {
+      background-color: #be0000;
+    }
+    84% {
+      background-color: #c50000;
+    }
+    87% {
+      background-color: #cb0000;
+    }
+    90% {
+      background-color: #d20000;
+    }
+    93% {
+      background-color: #d80000;
+    }
+    96% {
+      background-color: #df0000;
+    }
+    99% {
+      background-color: #e50000;
+    }
+    100% {
+      background-color: black;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes changeGradient {
+    0% {
+        background: linear-gradient(to right, #ff0000, #000000);
+    }
+
+    50% {
+        background: linear-gradient(to right, #000000, #0000ff);
+    }
+
+    100% {
+        background: linear-gradient(to right, #0000ff, #ff0000);
+    }
+}
+@keyframes fog-animation {
+0% {
+    opacity: 0.0;
+    transform: translate(0%, -2%);
+}
+100% {
+    opacity: 0.8;
+    transform: translate(0%, 2%);
+}
+}
+
+
+.a {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+.no-underline {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.fog-effect {
+position: relative;
+overflow: hidden;
+}
+
+.overlay {
+position: absolute;
+top: 100;
+left: -100;
+width: 120%;
+height: 200%;
+background: linear-gradient(rgba(33, 32, 32, 0.2), rgba(123, 95, 95, 0.8));
+pointer-events: none;
+animation: fog-animation 5s infinite alternate linear;
+
+}
+
+body {
+    background-color: #000;
+    background-image: "/assets/images/background.img";
+    background-size: auto;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+
+    padding: 0px;
+    image-rendering: optimizeQuality;
+    justify-content: right;
+    align-items: right;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    display: flex;
+    opacity: 100%;
+    align-items: center;
+    transition: opacity 0.9s ease-in;
+    image-rendering: crisp-edges;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    opacity: 100%;
+}
+
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+
+
+.animated-text {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.link-group {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-right: 40px;
+    padding-top: 5px;
+    color: #fff;
+    transition: color 1.9s ease-in-out, background-color 0.9s ease-in-out, padding-bottom 0.5s ease-in-out, padding-left 0.5s ease-in-out, padding-right 0.5s ease-in-out;
+}
+
+.link-group:hover {
+    border-radius: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-right: 40px;
+    padding-top: 5px;
+    color: #fff;
+    transition: color 1.9s ease-in-out, background-color 0.9s ease-in-out, padding-bottom 0.5s ease-in-out, padding-left 0.5s ease-in-out, padding-right 0.5s ease-in-out;
+}
+
+.link-group a {
+
+    border-radius: 10%;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-right: 40px;
+    padding-top: 5px;
+    color: #fff;
+    background-color: #000000;
+    text-decoration: none;
+    transition: color 1.9s ease-in-out, background-color 0.9s ease-in-out, padding-bottom 0.5s ease-in-out, padding-left 0.5s ease-in-out, padding-right 0.5s ease-in-out;
+}
+
+.link-group a:hover {
+
+    border-radius: 10%;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    background-size: 20%;
+    color: rgb(14, 15, 15);
+    background-color: #1a78e3;
+    transition: color 1.9s ease-in-out, background-color 0.5s ease-in-out, padding-bottom 0.5s ease-in-out, padding-left 0.5s ease-in-out, padding-left 0.5s ease-in-out;
+    animation: fog-animation 1s infinite alternate linear;
+}
+
+.home-content {
+    text-align: left;
+    align-items: left;
+    align-content: left;
+    padding: 0;
+
+}
+
+.home-content img {
+    max-width: 100%;
+}
+
+.home-content .card {
+    margin-right: 1000px;
+    margin-left: 0px;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-overlay h2,
+.image-overlay p {
+    margin: 0;
+    color: #fff;
+    align-items: left;
+    align-content: left;
+}
+
+ul {
+    list-style: none;
+
+}
+
+li {
+    margin-bottom: 10px;
+    overflow: hidden;
+
+}
+
+.card {
+    background-color: #333333;
+    color: #f1f1f1;
+    margin-right: 120px;
+    margin-left: 0px;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    transition: padding-right 0.5s ease-in-out;
+    transition: margin-right 0.5s ease-in-out;
+    transition: margin-left 0.5s ease-in-out;
+    width: 300px;
+    /* Set the desired width */
+    text-decoration: none;
+    text-decoration-line: none;
+    
+}
+
+.card .card-image {
+    padding-top: 10px;
+}
+
+.card-image {
+    opacity: 0%;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    position: inherit;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card .card-description {
+    opacity: 0%;
+    margin-left: 40px;
+    margin-right: 5px;
+    padding-left: 30px;
+    align-content: left;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-right: 30px;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.card:hover .card-description {
+    animation: fadeIn 0.7s ease-in-out;
+    opacity: 100%;
+    transition: opacity 0.5s ease-in;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    transition: padding-bottom 0.5s ease-in-out;
+    width: 400px;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.card:hover .card-image {
+    opacity: 100%;
+    position: inherit;
+}
+
+.card:hover {
+    background-color: #444444;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 120px;
+    /* Adjust the padding as needed */
+    transition: padding-right 0.5s ease-in-out;
+    transition: margin-right 0.5s ease-in-out;
+    transition: margin-left 0.5s ease-in-out;
+    width: 400px;
+    transition: width 0.5s ease-in-out;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 22px;
+    position: inherit;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.card-title:hover {
+    position: inherit;
+    text-decoration: none;
+    text-decoration-line: none;
+
+}
+
+.card-description {
+    color: #ccc;
+    font-size: 18px;
+    width: 400px;
+    text-decoration: none;
+    text-decoration-line: none;
+}
